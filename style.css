@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    height: 99vh;
+    grid-template-columns: 1fr 4fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "a b c"
+    "a b d";
+    border: solid firebrick 3px;
+    
+}
+
+.a{
+    grid-area: a;
+    background: tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.b{
+    grid-area: b;
+    background:gold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.c{
+    grid-area: c;
+    background: goldenrod;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.d{
+    grid-area: d;
+    background: darksalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2{
+    transition: 0.5s;
+}
+.h2:hover{
+    color: tomato;
+    font-style: oblique;
+    font-size: 90px;
+}
+input:required{
+    border: 5px solid tomato;
+}
+input:optional{
+    margin: 5px;
+}
+input:checked{
+    margin: 180px;
+}
+br:empty{
+    line-height: 2rem;
+}
+p::first-letter{
+    font-size: 2rem;
+   
+}
+p::first-line{
+    color: tomato;
+    font-size: larger;
+    
+}
+p::selection{
+    background-color:gold ;
+    color:crimson;
+}
+p::after{
+    content: "🙈";
+    padding-left: 1rem;
+}
+p::before{
+    content: "🙈";
+}
+p:hover{
+    color: purple;
+}
+a:active{
+    color: red;
+}
+li::before{
+    content: "🌵";
+}
+.lista{
+    list-style: none;
+}
+li:nth-child(2n+1){
+    color: green;
+    background: lawngreen;
+}
